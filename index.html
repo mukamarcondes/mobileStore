@@ -50,7 +50,7 @@
 
     <h1 class="titulo">Encomendas</h1>
 
-    <table>
+    <table id="tabelaEncomendas">
         <thead>
             <tr>
                 <th>Nome</th>
@@ -93,14 +93,52 @@
         
     </table>
 
+<div class="inputs">
+    <label for="myInput" class="label" for="nome">
+      <span class="label-title">Name</span>
+      <input id="nome" id="myInput" class="input" name="text" placeholder="digite o nome" type="text">
+    </label>
 
-    <br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <label for="myInput" class="label">
+    <span class="label-title">Quantidade</span>
+    <input id="quantidade" id="myInput" class="input" name="text" placeholder="digite a QTD" type="text">
+  </label>
+
+
+
+
+  <label for="myInput" class="label">
+    <span class="label-title">Produto</span>
+    <!-- <input id="myInput" class="input" name="text" placeholder="digite o Produto" type="text"> -->
+    <select id="produto"  id="myInput" class="input" >
+      <option value="Qix Chorão Park"> Qix Chorão Park </option>
+      <option value="TESLA NINE BLUE 2"> TESLA NINE BLUE 2 </option>
+      <option value="Adidas Campos"> Adidas Campos </option>
+      <option value="Nike TL 98"> Nike TL 98 </option>
+  </select>
+  </label>
+
+  
+
+
+  <label for="myInput" class="label">
+    <span class="label-title">Valor unitario</span>
+    <input id="valor" id="myInput" class="input" name="text" placeholder="digite a valor" type="text">
+  </label>
+</div>
+
+<div class="ok">
+    <button  value="Adicionar Encomenda" onclick="adicionarEncomenda()" style="--clr:#8A2BE2"><span>Button</span><i></i></button>
+</div>
+
+    <br><br><br> <br><br><br>
 
     <footer class="footer">
         <div class="footer__parralax">
-          <div class="footer__parralax-trees"></div>
-          <div class="footer__parralax-moto"></div>
-          <div class="footer__parralax-secondplan"></div>
+          <!-- <div class="footer__parralax-trees"></div> -->
+          <!-- <div class="footer__parralax-moto"></div> -->
+          <!-- <div class="footer__parralax-secondplan"></div> -->
           <div class="footer__parralax-premierplan"></div>
           <div class="footer__parralax-voiture"></div>
         </div>
