@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Store</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="shortcut icon" href="./img/logo-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <DIV class="menu">
+            <!-- <img src="./img/logo-removebg-preview.png" alt="Logo" class="logo"> -->
+
+            <div class="header">  
+                <div class="header__logo">
+                    <img src="./img/logo-removebg-preview.png" alt="Logo" class="logo">
+                </div>
+                <nav class="navbar">
+                  <ul class="navbar__menu">
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__link"><i data-feather="home"></i><span>Home</span> </a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__link"><i data-feather="message-square"></i><span>Messages</span></a>        
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__link"><i data-feather="help-circle"></i><span>Help</span></a>        
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__link"><i data-feather="settings"></i><span>Settings</span></a>        
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+        </DIV>
+    </header>
+
+    <h1 class="titulo">Encomendas</h1>
+
+    <div class="filtra-tabela">
+      <label for="filtrar-tabela">Filtrar:</label>
+      <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente:">
+      </div>
+
+  <br><br>
+    <table id="tabelaEncomendas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cliente">
+                <td class="info-nome">Matheus</td>
+                <td class="info-produto">iphone 12</td>
+                <td class="info-qtd">1</td>
+                <td class="info-valor"> 3500</td>
+                <td class="info-total">3500</td>
+            </tr>
+            <tr class="cliente">
+                <td class="info-nome">Victor</td>
+                <td class="info-produto">iphone 14</td>
+                <td class="info-qtd">2</td>
+                <td class="info-valor">5000</td>
+                <td class="info-total">10000</td>
+            </tr>
+            <tr class="cliente">
+                <td class="info-nome">Pedro</td>
+                <td class="info-produto">capinha iphone 12 roxa</td>
+                <td class="info-qtd">2</td>
+                <td class="info-valor"> 30</td>
+                <td class="info-total"> 60</td>
+            </tr>
+            <tr class="cliente">
+                <td class="info-nome">Pablo</td>
+                <td class="info-produto">capinha iphone 11 vermelho</td>
+                <td class="info-qtd">10</td>
+                <td class="info-valor"> 30</td>
+                <td class="info-total"> 300</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+<div class="inputs">
+    <label for="myInput" class="label" for="nome">
+      <span class="label-title">Name</span>
+      <input id="nome" id="myInput" class="input" name="text" placeholder="digite o nome" type="text">
+    </label>
+
+
+  <label for="myInput" class="label">
+    <span class="label-title">Quantidade</span>
+    <input id="quantidade" id="myInput" class="input" name="text" placeholder="digite a QTD" type="text">
+  </label>
+
+
+
+
+  <label for="myInput" class="label">
+    <span class="label-title">Produto</span>
+    <!-- <input id="myInput" class="input" name="text" placeholder="digite o Produto" type="text"> -->
+    <select id="produto"  id="myInput" class="input" >
+      <option value="Iphone 13"> Iphone 13 </option>
+      <option value="Iphone 14"> Iphone 14 </option>
+      <option value="Iphone 12"> Iphone 12 </option>
+      <option value="capinha iphone 11 vermelho"> capinha iphone 11 vermelho </option>
+      <option value="capinha iphone 12 roxa"> capinha iphone 12 roxa </option>
+  </select>
+  </label>
+
+  
+
+
+  <label for="myInput" class="label">
+    <span class="label-title">Valor unitario</span>
+    <input id="valor" id="myInput" class="input" name="text" placeholder="digite a valor" type="text">
+  </label>
+</div>
+
+<div class="ok">
+    <button class="button" value="Adicionar Encomenda" onclick="adicionar()" style="--clr:#8A2BE2"><span>Button</span><i></i></button>
+    <button class="button" id="buscar-Encomenda" style="--clr:#8A2BE2" ><span>Buscar</span><i></i></button>
+</div>
+
+    <br><br><br> <br><br><br>
+
+    <footer class="footer">
+        <div class="footer__parralax">
+          <!-- <div class="footer__parralax-trees"></div> -->
+          <!-- <div class="footer__parralax-moto"></div> -->
+          <!-- <div class="footer__parralax-secondplan"></div> -->
+          <div class="footer__parralax-premierplan"></div>
+          <div class="footer__parralax-voiture"></div>
+        </div>
+        
+            
+           
+          </div>
+            <div class="footer__copyrights">
+              <p class="copy"> footer__copyrights  @Murilo Marcondes Silva</p>
+            </div>
+        </div>
+      </footer>
+
+    <script src="./js/text.js"></script>
+    <script src="js/filtrar.js"></script>
+    <script src="js/conexao.js"></script>
+    <script src="js/texte.js"></script>
+
+</body>
+
+
+</html>
